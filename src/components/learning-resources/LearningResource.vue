@@ -1,21 +1,26 @@
 <template>
+    <base-card>
     <li>
-        <div>
+      
             <header>
                 <h3>{{ title }}</h3>
-                <button>Delete</button>
+                <the-button mode="flat">Delete</the-button>
             </header>
-        </div>
+      
         <p>{{ description }}</p>
         <nav>
             <a :href="link">View Resourece</a>
         </nav>
     </li>
+</base-card>
+  
 </template>
 
 
 <script>
+import TheButton from '../UI/BaseButton.vue'
 export default{
+  components: { TheButton },
     props: ['title', 'description', 'link']
 }
     
