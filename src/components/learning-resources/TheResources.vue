@@ -19,6 +19,7 @@ export default {
         setSelectedTab(tab) {
             this.selectedTab = tab;
         }
+        // TEST
     }
 }
 </script>
