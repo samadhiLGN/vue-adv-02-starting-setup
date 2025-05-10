@@ -1,7 +1,7 @@
 <template>
     <button :type="type" :class="mode">
         <slot></slot>
-        </button>
+    </button>
 </template>
 
 <script>
